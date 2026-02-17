@@ -15,7 +15,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -41,6 +41,10 @@ main {
     margin-bottom: 96px;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* 
 
@@ -51,6 +55,8 @@ NAVBAR ↓
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 32px;
 }
 
@@ -64,6 +70,31 @@ nav {
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
+}
+
+.nav__logo--img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav__links--link {
+    padding: 0 8px;
+}
+
+.nav__link--btn {
+    color: #f7fafc;
+    background-color: #6415ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+
 }
 
 
