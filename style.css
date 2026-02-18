@@ -350,7 +350,53 @@ QUALITY WORK ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 64px
 }
+
+.qual__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    bottom: 10px;
+}
+
+.qual__right {
+    width: 50%;
+}
+
+.qual__right--img {
+    max-width: 100%;
+}
+
+.qual__left--heading-small {
+    padding-bottom: 20px;
+}
+
+.qual__left--heading{
+    padding-bottom: 25px;
+}
+
+.qual__para {
+    line-height: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    color: #7c8ba1;
+}
+
+.quality--btn {
+    margin-top: 0;    
+    background-color: #6c2bd9;
+    color: white;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+
 
 
 /* 
