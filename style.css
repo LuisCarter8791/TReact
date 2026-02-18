@@ -412,6 +412,46 @@ STEPS ↓
     align-items: center;
 }
 
+.steps__left {
+    width: 50%;
+}
+
+.steps__right {
+    width: 50%;
+}
+
+.steps__left--img {
+    width: 50%;
+}
+
+.steps__right--step div {
+    display: flex;
+}
+
+.steps__right--spec {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__right h3 {
+    margin-bottom: 20px;
+}
+
+.steps__right h1 {
+    margin-bottom: 32px;
+}
+
+.steps__right--count {
+    margin-right: 15px;
+    color: #7c8ba1;
+
+}
+
+.steps__right--spec p {
+    margin-bottom: 24px;
+    color: #95989E;
+    line-height: 25px;
+}
 
 /* 
 
