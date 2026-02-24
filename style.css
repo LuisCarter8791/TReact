@@ -472,6 +472,49 @@ PRICING ↓
 
 */
 
+.plans {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.plan__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.625;
+}
+
+.plan__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.plan__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding: 2rem;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+}
+
+.plan__feature--main {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+.plan__btn {
+    text-align: center;
+}
 
 
 #pricing .row {
@@ -479,6 +522,139 @@ PRICING ↓
     flex-direction: column;
     align-items: center;
 }
+
+.plan__single {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 12px;
+}
+
+/* Colored top bar per plan */
+.plan__single.first .plan__top {
+    height: 8px;
+    background: linear-gradient(to right, #38b2ac, #4fd1c5);
+}
+.plan__single.second .plan__top {
+    height: 8px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+.plan__single.third .plan__top {
+    height: 8px;
+    background: linear-gradient(to right, #fc8181, #f56565);
+}
+
+/* Middle card gets dark bg */
+.plan__single.second {
+    background-color: #5a67d8;
+}
+.plan__single.second * {
+    color: white;
+}
+
+/* Plan header area */
+.plan__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    line-height: 1.625;
+}
+
+.plan__name {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.plan__price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.plan__duration {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #7c8ba1;
+    letter-spacing: 0.1em;
+}
+
+.plan__single.second .plan__duration {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Features section */
+.plan__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid rgb(226, 232, 240);
+    border-bottom: 1px solid rgb(226, 232, 240);
+    gap: 16px;
+    flex: 1;
+}
+
+.plan__single.second .plan__features {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.plan__feature--main {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.plan__feature {
+    font-size: 1rem;
+    color: #7c8ba1;
+}
+
+.plan__single.second .plan__feature {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Button area */
+.plan__btn {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.plan__btn--main {
+    padding: 14px 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.plan__single.first .plan__btn--main {
+    background-color: #38b2ac;
+    color: white;
+}
+
+.plan__single.second .plan__btn--main {
+    background-color: white;
+    color: #5a67d8;
+}
+
+.plan__single.third .plan__btn--main {
+    background-color: #fc8181;
+    color: white;
+}
+
+.plan__btn--main:hover {
+    opacity: 0.9;
+}
+
 
 
 
