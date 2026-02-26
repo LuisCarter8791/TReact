@@ -294,7 +294,7 @@ FEATURES ↓
 
 .features__heading--para {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 30px;
     color: #999ea4;
 }
@@ -747,9 +747,71 @@ TESTIMONIALS ↓
 
 */
 
+.testimonial__whole {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__title--small {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.testimonial__title--large {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonial__customers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 85px;
+
+}
+
+.testimonial__customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.testimonial__customer--img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+
+.testimonial__customer--para {
+    width: 280px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    color: #7c8ba1;
+    font-weight: 500;
+}
+.testimonial__customer--name {
+    font-size: 30px;
+    margin-top: 20px;
+}
 
 #testimonials .row {
     display: flex;
+}
+
+#testimonials .container .row {
+    display: flex;
+    flex-direction: column;
 }
 
 
