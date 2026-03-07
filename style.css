@@ -91,7 +91,7 @@ nav {
 .nav__link--btn {
     color: #f7fafc;
     background-color: #6415ff;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px 20px;
     font-size: 20px;
 
@@ -880,6 +880,62 @@ footer {
     position: relative;
     overflow: hidden;
 }
+
+.footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__link {
+    list-style-type: none;
+}
+
+h5 {
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+}
+
+.footer__links--1,
+.footer__links--2,
+.footer__links--3,
+.footer__links--4,
+.footer__links--5 {
+    margin-bottom: 2.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.footer__links--list {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.footer__link{
+    margin-top: 0.75rem;
+}
+
+.footer__link--a {
+    border-bottom-width: 2px;
+    border-color: transparent;
+    padding-bottom: 0.25rem;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+    font-size: 20px;
+    color: white;
+}
+
+hr {
+    margin-bottom: 4rem;
+    width: 100%;
+    border-bottom-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(116 44 255 / var(--tw-border-opacity));
+}
+
 
 
 /* 
