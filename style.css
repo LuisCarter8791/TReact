@@ -883,9 +883,9 @@ footer {
 
 .footer__links {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .footer__link {
@@ -893,9 +893,11 @@ footer {
 }
 
 h5 {
-    font-weight: 900;
-    font-size: 20px;
     color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
 }
 
 .footer__links--1,
@@ -909,9 +911,10 @@ h5 {
 }
 
 .footer__links--list {
-    margin-top: 1.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer__link{
@@ -919,30 +922,82 @@ h5 {
 }
 
 .footer__link--a {
-    border-bottom-width: 2px;
-    border-color: transparent;
-    padding-bottom: 0.25rem;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-duration: 300ms;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.footer__link--a:hover {
     color: white;
 }
 
-hr {
-    margin-bottom: 4rem;
+footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
-    border-bottom-width: 2px;
-    --tw-border-opacity: 1;
-    border-color: rgb(116 44 255 / var(--tw-border-opacity));
 }
 
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}    
+
+.footer__bottom--h2 {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.youtube {
+    width: 50px;
+    height: 50px;
+}
+
+.footer__bottom--para {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+}
+
+.footer__bottom--socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.brand {
+    fill: white;
+    width: 60px;
+    height: 60px;
+    background-color: #6415ff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer__row > .nav__logo,
+.footer__bottom--para,
+.footer__bottom--socials {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 
 
 /* 
 
 MOBILE RESPONSIVENESS ↓
 
-*/
+*/1280px, 1024px, 768px, 640px
 
 
 @media(max-width: 1280px) {
