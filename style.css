@@ -114,8 +114,8 @@ nav {
     color: #f7fafc;
     background-color: #6415ff;
     border-radius: 0.25rem;
-    padding: 10px 20px;
-        font-size: 0.875rem;}
+    padding: 10px 0px;
+    font-size: 0.875rem;}
 
 .btn__menu {
     display: none;
@@ -249,10 +249,15 @@ header .row {
     color: white;
     border: none;
     border-radius: 40px;
-    padding: 10px 15px;
+    padding: 15px 25px;
     font-size: 0.875rem;
     font-weight: bold;
     cursor: pointer;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    line-height: 1;
 }
 
 .signup-button:hover {
@@ -300,8 +305,8 @@ FEATURES ↓
 }
 
 .features__heading--small {
-    font-size: 30px;
-    font-weight: 800;
+    /* font-size: 30px; */
+    font-weight: 700;
     margin-bottom: 32px;
 }
 
@@ -313,7 +318,7 @@ FEATURES ↓
 
 .features__heading--para {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.125rem;
     margin-bottom: 30px;
     color: #999ea4;
 }
@@ -389,11 +394,15 @@ QUALITY WORK ↓
 }
 
 .qual__left--heading-small {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    font-weight: 700;
 }
 
 .qual__left--heading{
     padding-bottom: 25px;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
 }
 
 .qual__para {
@@ -440,7 +449,7 @@ STEPS ↓
 }
 
 .steps__left--img {
-    width: 50%;
+    max-width: 100%;
 }
 
 .steps__right--step div {
