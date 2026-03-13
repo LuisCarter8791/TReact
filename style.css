@@ -250,7 +250,7 @@ header .row {
     border: none;
     border-radius: 40px;
     padding: 10px 15px;
-    font-size: 0.875;
+    font-size: 0.875rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -505,9 +505,6 @@ VALUES ↓
     font-weight: 500;
 }
 
-#values .container .row {
-    flex-direction: column;
-}
 
 .value__item {
     display: flex;
@@ -562,7 +559,8 @@ VALUES ↓
 
 #values .row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -841,7 +839,7 @@ START / CALL TO ACTION ↓
 */
 
 #start {
-    background-color: #6415FF;
+    
 }
 
 .cta {
@@ -882,6 +880,9 @@ START / CALL TO ACTION ↓
 #start .row {
     position: relative;
     overflow: hidden;
+    background-color: #6415FF;
+    border-radius: 8px;
+    padding: 48px;
 }
 
 
